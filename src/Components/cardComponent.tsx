@@ -16,16 +16,16 @@ const CardComponent = () => {
         card5: true,
     });
 
-    const handleRemoveCard = (cardKey:string) => {
+    const handleRemoveCard = (cardKey: string) => {
         setVisibleCards((prev) => ({ ...prev, [cardKey]: false }));
     };
 
     return (
-        <section className="bg-white w-[90%] md:w-[100%] h-[100%] flex flex-col gap-[20px] p-[10px] justify-center items-center">
+        <section className="bg-white w-[100%] md:w-[100%] h-[100%] flex flex-col gap-[20px] p-[10px] justify-center items-center">
             {/* First Row */}
-            <div className="w-[70%] flex flex-wrap gap-[20px] justify-center ">
+            <div className="sm:w-[70%] w-[90%] md:w-[80%] lg:w-[100%] 15xl:w-[80%] flex flex-wrap gap-[20px] justify-center py-[20px]">
                 {visibleCards.card1 && (
-                    <div className= "card_two bg-neutral-100 border-stone-400 rounded-[0.5rem] p-4 sm:p-6 w-full sm:w-[15rem] h-[17rem] md:w-[20rem] shadow-md relative">
+                    <div className="card_two bg-neutral-100 border-stone-400 rounded-[0.5rem] p-4 sm:p-6 w-full sm:w-[15rem] h-[17rem] md:w-[20rem] shadow-md relative">
                         <button onClick={() => handleRemoveCard("card1")} className="absolute top-2 right-2  text-black rounded-full w-6 h-6 flex items-center justify-center">
                             <FaTimes />
                         </button>
@@ -36,7 +36,7 @@ const CardComponent = () => {
                     </div>
                 )}
                 {visibleCards.card2 && (
-                <div className="card bg-neutral-100 border-stone-400 rounded-[0.5rem] p-4 sm:p-6 w-full sm:w-[15rem] h-[17rem] md:w-[20rem] shadow-md relative">
+                    <div className="card bg-neutral-100 border-stone-400 rounded-[0.5rem] p-4 sm:p-6 w-full sm:w-[15rem] h-[17rem] md:w-[20rem] shadow-md relative">
                         <button onClick={() => handleRemoveCard("card2")} className="absolute top-2 right-2  text-black rounded-full w-6 h-6 flex items-center justify-center">
                             <FaTimes />
                         </button>
@@ -51,7 +51,7 @@ const CardComponent = () => {
                         <button onClick={() => handleRemoveCard("card3")} className="absolute top-2 right-2  text-black rounded-full w-6 h-6 flex items-center justify-center">
                             <FaTimes />
                         </button>
-                        <Image src="/broken.jpg" width={30} height={30} alt='User Image' className="object-cover w-[3rem] h-[3rem] md:w-[3rem] md:h-[3rem]" />
+                        <Image src="/broken.jpg" width={30} height={30} alt='UserImage' className="object-cover w-[3rem] h-[3rem] md:w-[3rem] md:h-[3rem]" />
                         <p className="text-sm mt-2">mikebrown@example.com</p>
                         <p className="text-sm mt-2">45 years old</p>
                         <p className="text-sm mt-2">Tech-savvy and innovative, Mike is known for his cutting-edge software solutions.</p>
@@ -74,7 +74,7 @@ const CardComponent = () => {
                         <button onClick={() => handleRemoveCard("card5")} className="absolute top-2 right-2  text-black rounded-full w-6 h-6 flex items-center justify-center">
                             <FaTimes />
                         </button>
-                        <Image src="/broken.jpg" width={30} height={30} alt='User Image' className="object-cover w-[3rem] h-[3rem] md:w-[3rem] md:h-[3rem]" />
+                        <Image src="/broken.jpg" width={30} height={30} alt='UserImage' className="object-cover w-[3rem] h-[3rem] md:w-[3rem] md:h-[3rem]" />
                         <h3 className="font-bold mt-2">Alex Martinez</h3>
                         <p className="text-sm mt-2">30 years old</p>
                     </div>
