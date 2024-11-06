@@ -27,7 +27,18 @@ body {
 
 .card:hover {
   transform: rotate(-3deg) scale(1.03);
-  /* Tilt slightly to the left and scale up slightly */
+
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
-  /* Add a subtle shadow for depth */
+
+}
+
+.card_two {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card_two:hover {
+  transform: rotate(3deg) scale(1.03);
+
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+
 }

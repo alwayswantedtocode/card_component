@@ -25,14 +25,14 @@ const CardComponent = () => {
             {/* First Row */}
             <div className="w-full flex flex-wrap gap-[20px] justify-center ">
                 {visibleCards.card1 && (
-                    <div className= "card bg-neutral-100 border-stone-400 rounded-[0.5rem] p-4 sm:p-6 w-full sm:w-[15rem] h-[16rem] md:w-[20rem] shadow-md relative">
+                    <div className= "card_two bg-neutral-100 border-stone-400 rounded-[0.5rem] p-4 sm:p-6 w-full sm:w-[15rem] h-[16rem] md:w-[20rem] shadow-md relative">
                         <button onClick={() => handleRemoveCard("card1")} className="absolute top-2 right-2  text-black rounded-full w-6 h-6 flex items-center justify-center">
                             <FaTimes />
                         </button>
-                        <Image src={Panda} width={64} height={64} alt='' className="object-cover w-[3rem] h-[3rem] md:w-[4rem] md:h-[4rem]" />
+                        <Image src={Panda} width={64} height={64} alt='' className="object-cover w-[3rem] h-[3rem] md:w-[4rem] md:h-[4rem] mt-2" />
                         <h3 className="font-bold mt-2">John Doe</h3>
-                        <p className="text-sm">28 years old</p>
-                        <p className="text-sm">A passionate wildlife enthusiast and photographer, often found exploring nature.</p>
+                        <p className="text-sm mt-2">28 years old</p>
+                        <p className="text-sm mt-2">A passionate wildlife enthusiast and photographer, often found exploring nature.</p>
                     </div>
                 )}
                 {visibleCards.card2 && (
@@ -42,19 +42,19 @@ const CardComponent = () => {
                         </button>
                         <Image src={Man} width={64} height={64} alt='' className="object-cover w-[3rem] h-[3rem] md:w-[4rem] md:h-[4rem]" />
                         <h3 className="font-bold mt-2">Jane Smith</h3>
-                        <p className="text-sm">sarahjohnson@example.com</p>
-                        <p className="text-sm">An avid reader and aspiring novelist, Jane loves spending her weekends at local cafes.</p>
+                        <p className="text-sm mt-2">sarahjohnson@example.com</p>
+                        <p className="text-sm mt-2">An avid reader and aspiring novelist, Jane loves spending her weekends at local cafes.</p>
                     </div>
                 )}
                 {visibleCards.card3 && (
-                <div className="card bg-neutral-100 border-stone-400 rounded-[0.5rem] p-4 sm:p-6 w-full sm:w-[15rem] h-[11rem] md:w-[20rem] shadow-md relative">
+                    <div className="card_two bg-neutral-100 border-stone-400 rounded-[0.5rem] p-4 sm:p-6 w-full sm:w-[15rem] h-[11rem] md:w-[20rem] shadow-md relative">
                         <button onClick={() => handleRemoveCard("card3")} className="absolute top-2 right-2  text-black rounded-full w-6 h-6 flex items-center justify-center">
                             <FaTimes />
                         </button>
-                        <Image src={broken} width={64} height={64} alt='' className="object-cover w-[3rem] h-[3rem] md:w-[4rem] md:h-[4rem]" />
-                        <p>mikebrown@example.com</p>
-                        <p className="text-sm">45 years old</p>
-                        <p className="text-sm">Tech-savvy and innovative, Mike is known for his cutting-edge software solutions.</p>
+                        <Image src={broken} width={30} height={30} alt='' className="object-cover w-[3rem] h-[3rem] md:w-[3rem] md:h-[3rem]" />
+                        <p className="text-sm mt-2">mikebrown@example.com</p>
+                        <p className="text-sm mt-2">45 years old</p>
+                        <p className="text-sm mt-2">Tech-savvy and innovative, Mike is known for his cutting-edge software solutions.</p>
                     </div>
                 )}
             </div>
@@ -62,25 +62,25 @@ const CardComponent = () => {
             {/* Second Row */}
             <div className="w-full flex flex-wrap gap-[20px] justify-center">
                 {visibleCards.card4 && (
-                    <div className="card bg-neutral-100 border-stone-400 rounded-[0.5rem] p-4 sm:p-6 w-full sm:w-[15rem] h-[16rem] md:w-[20rem] shadow-md relative">
+                    <div className="card_two bg-neutral-100 border-stone-400 rounded-[0.5rem] p-4 sm:p-6 w-full sm:w-[15rem] h-[16rem] md:w-[20rem] shadow-md relative">
                         <button onClick={() => handleRemoveCard("card4")} className="absolute top-2 right-2  text-black rounded-full w-6 h-6 flex items-center justify-center">
                             <FaTimes />
                         </button>
                         <Image src={Profile} width={64} height={64} alt='' className="object-cover w-[3rem] h-[3rem] md:w-[4rem] md:h-[4rem]" />
                         <h3 className="font-bold mt-2">Sarah Johnson</h3>
-                        <p className="text-sm">sarahjohnson@example.com</p>
-                        <p className="text-sm">30 years old</p>
-                        <p className="text-sm">A fitness enthusiast, Sarah enjoys hiking and participating in marathons around the country.</p>
+                        <p className="text-sm mt-2">sarahjohnson@example.com</p>
+                        <p className="text-sm mt-2">30 years old</p>
+                        <p className="text-sm mt-2">A fitness enthusiast, Sarah enjoys hiking and participating in marathons around the country.</p>
                     </div>
                 )}
                 {visibleCards.card5 && (
-                    <div className="card bg-neutral-100 border-stone-400 rounded-[0.5rem] p-4 sm:p-6 w-full sm:w-[15rem] h-[11rem] md:w-[20rem] shadow-md relative">
+                    <div className="card_two bg-neutral-100 border-stone-400 rounded-[0.5rem] p-4 sm:p-6 w-full sm:w-[15rem] h-[11rem] md:w-[20rem] shadow-md relative">
                         <button onClick={() => handleRemoveCard("card5")} className="absolute top-2 right-2  text-black rounded-full w-6 h-6 flex items-center justify-center">
                             <FaTimes />
                         </button>
-                        <Image src={broken} width={64} height={64} alt='' className="object-cover w-[3rem] h-[3rem] md:w-[4rem] md:h-[4rem]" />
+                        <Image src={broken} width={30} height={30} alt='' className="object-cover w-[3rem] h-[3rem] md:w-[3rem] md:h-[3rem]" />
                         <h3 className="font-bold mt-2">Alex Martinez</h3>
-                        <p className="text-sm">30 years old</p>
+                        <p className="text-sm mt-2">30 years old</p>
                     </div>
                 )}
                 <div className="bg-white border-stone-400 rounded-[0.5rem] p-[20px] w-full sm:w-[15rem] md:w-[20rem] h-[8rem]"></div>
