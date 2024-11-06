@@ -21,9 +21,9 @@ const CardComponent = () => {
     };
 
     return (
-        <section className="bg-white w-[90%] md:w-[100%] h-[100%] flex flex-col gap-[20px] p-[10px]">
+        <section className="bg-white w-[90%] md:w-[100%] h-[100%] flex flex-col gap-[20px] p-[10px] justify-center items-center">
             {/* First Row */}
-            <div className="w-full flex flex-wrap gap-[20px] justify-center ">
+            <div className="w-[70%] flex flex-wrap gap-[20px] justify-center ">
                 {visibleCards.card1 && (
                     <div className= "card_two bg-neutral-100 border-stone-400 rounded-[0.5rem] p-4 sm:p-6 w-full sm:w-[15rem] h-[17rem] md:w-[20rem] shadow-md relative">
                         <button onClick={() => handleRemoveCard("card1")} className="absolute top-2 right-2  text-black rounded-full w-6 h-6 flex items-center justify-center">
@@ -57,10 +57,6 @@ const CardComponent = () => {
                         <p className="text-sm mt-2">Tech-savvy and innovative, Mike is known for his cutting-edge software solutions.</p>
                     </div>
                 )}
-            </div>
-
-            {/* Second Row */}
-            <div className="w-full flex flex-wrap gap-[20px] justify-center">
                 {visibleCards.card4 && (
                     <div className="card_two bg-neutral-100 border-stone-400 rounded-[0.5rem] p-4 sm:p-6 w-full sm:w-[15rem] h-[17rem] md:w-[20rem] shadow-md relative">
                         <button onClick={() => handleRemoveCard("card4")} className="absolute top-2 right-2  text-black rounded-full w-6 h-6 flex items-center justify-center">
